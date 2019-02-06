@@ -27,4 +27,4 @@ Run the following commands in the project's root directory to set up your databa
 Go to http://0.0.0.0:3001/
 #### Application looks like below: 
 
-![image](https://drive.google.com/uc?export=view&id=1913oZeBZPBNiUuk8gu3ZSbLBA2l_VQtG)
+![image](https://github.com/JishaDSND/Udacity/blob/master/Disaster%20Response%20Pipeline/DRP%20app%20-%20DashBoard.png)
