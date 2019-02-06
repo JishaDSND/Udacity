@@ -25,3 +25,6 @@ Run the following commands in the project's root directory to set up your databa
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
 Go to http://0.0.0.0:3001/
+#### Application looks like below: 
+
+![image](https://drive.google.com/uc?export=view&id=1913oZeBZPBNiUuk8gu3ZSbLBA2l_VQtG)
