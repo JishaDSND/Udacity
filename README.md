@@ -1,54 +1,52 @@
-# Udacity DSND Projects
+# Create a Customer Segmentation Report for Arvato Financial Solutions
 
-This repository is a working project repo for data science course
+There is a blog post for this project hosted in [Medium](https://medium.com/@lawrence.sumera/creating-a-customer-segmentation-report-for-arvato-financial-solutions-fda19be519f).
 
-### Project 1 - Predicting Donors' Income using supervised learning (In progress)
-Description:
+## Table of Contents:
 
-In this project, I employed several supervised algorithms to accurately model individuals' income using data collected from the 1994 U.S. Census. I then chose the best candidate algorithm from preliminary results and further optimize this algorithm to best model the data. My goal with this implementation was to construct a model that accurately predicts whether an individual makes more than $50,000.
+1. [Installation](#installation)
+2. [Summary](#summary)
+3. [Data Files](#files)
+4. [Instructions](#instructions)
 
-#Project Notebook: Finding Donors
+## Installation: <a name="installation"></a>
 
-### Project 2 - Flower Image Classifier Application (In Progress)
+Aside from the libraries included in the Anaconda distribution for Python versions 3.*, the following have been installed for this Jupyter notebook.
 
-### Project 3 - Identifying Customers Segmentations (In Progress)
-Description:
+1. [progressbar](https://pypi.org/project/progressbar/)
+2. [XGBRegressor](https://xgboost.readthedocs.io/en/latest/python/python_api.html)
 
-In this project, I applied unsupervised learning techniques to identify segments of the population that form the core customer base for a mail-order sales company in Germany. These segments can then be used to direct marketing campaigns towards audiences that will have the highest expected rate of returns. The data that you will use has been provided by our partners at Bertelsmann Arvato Analytics, and represents a real-life data science task.
+## Summary: <a name="summary"></a>
 
-First, the general demographics data are clustered through a KMeans clustering algorithms, then the same parameters are applied over the customer dataset to investigate if the customers are following the same distributions.
+This challenge was provided by Arvato Financial Solutions for the Udacity Data Science Nanodegree Program for Term 2. This is one of the possible capstone projects.
 
-Project Notebook: Customer Segmentations
+There were three major steps in the project:
 
-### Project 4 - Data Science Blog (In Progress)
-Description:
+1. **Customer Segmentation Report** - This analyzed demographics data for customers of a mail-order sales company in Germany, comparing it against demographics information for the general population. This used unsupervised learning techniques to perform customer segmentation, identifying the parts of the population that best describe the core
+customer base of the company. 
 
-In this project, I analyzed the 2011 - 2018 Stack Overflow developer survey data in order to create a blog post regarding a comprehensive study of data science careers. The project notebook could be found below
+2. **Supervised Learning Model** -This used the previous analysis to build a machine learning model that predicts whether or not each individual will respond to the campaign.
 
-Project Notebook: Understanding the Career of Data Scientists
+3. **Kaggle Competition** - This used the chosen model to make predictions on the campaign data as part of a Kaggle Competition and see how it measures up to the other fellow students.
 
-#### Blog Post:  
+## Data Files: <a name="files"></a>
 
-### Project 5 - Disaster Response Pipeline (Completed)
-Description:
+There were four data files provided by Arvato for this project. The last file was created by the user. As part of the terms and conditions of Arvato, the files cannot be shared in this repository. However, they can be described below.
 
-In this project, I built a data transformation - machine learning pipeline that is capable to curate the class of the messages. The pipeline is eventually built into a flask application. The project include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data.The project notebook could be found below
+1. `azdias.csv` - Demographics data for the general population of Germany - 891,211 persons (rows) x 366 features (columns)
 
-Project Notebook: ETL
+2. `customers.csv` - Demographics data for customers of a mail-order company - 191,652 persons (rows) x 369 features (columns)
 
-Prject Notebook: Machine Learning Pipeline
+3. `mailout_train.csv` - Demographics data for individuals who were targets of a marketing campaign (train) - 42,982 persons (rows) x 367 (columns)
 
-Disaster Response App
+4. `mailout_test.csv` - Demographics data for individuals who were targets of a marketing campaign (test) - 42,833 persons (rows) x 366 (columns)
 
-### Project 6 - Recommendation System (In progress)
-Description:
+5. `feat_info.csv` - Contains a summary of properties for each demographics data column created by the user - 366 features (rows) x 4 (columns)
 
-In this project, I developed a recommendation engine's algorithm with IBM communities articles and user interactions. This project will serve as a prototype of the recommender systems of the article recommendation systems of IBM. The project will be hosted on
+## Instructions: <a name="instructions"></a>
 
-Project Notebook: Recommendations with IBM
+1. Since the data files are not available publicly, the Jupyter notebook is just for exploration. An HTML file has been provided as another means to check the notebok.
 
-#### Capstone Project - Create a Customer Segmentation Report for Arvato Financial Services (In Progress)
-Description:
+2. There are two spreadsheets provided in the workspace. `DIAS Information Levels - Attributes 2017.xlsx` is a top-level list of attributes and descriptions, organized by informational category. The other `DIAS Attributes - Values 2017.xlsx` is a detailed mapping of data values for each feature in alphabetical order.
 
-
-
+3. The Jupyter notebook produced a file called `submissions.csv` which was submitted to Kaggle for the in-class [competition](https://www.kaggle.com/c/udacity-arvato-identify-customers).
